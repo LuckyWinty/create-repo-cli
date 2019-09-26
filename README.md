@@ -3,11 +3,11 @@ A cli to create project quickly...
 
 ## install global
 
-`npm install create-repo-cli -g`
+`sudo npm install create-repo-cli -g`
 
 ## create webpack project
 
-1. create-repo init <project-name>
+1. create-repo init [project-name]
 2. choose webpack template type
 3. run `yarn && yarn start`
 
@@ -16,5 +16,5 @@ A cli to create project quickly...
 1. create-repo init <project-name>
 2. choose rollup template type
 3. run `yarn`    
-4. cd <your-component-path>
+4. cd src/[component-name]
 5. run `yarn start`
