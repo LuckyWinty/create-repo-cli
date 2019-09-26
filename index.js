@@ -23,18 +23,19 @@ program
         },
         {
           name: 'description',
-          message: 'please enter a description:\n',
+          message: 'please enter a description:',
         },
         {
           name: 'author',
-          message: 'please enter a author:\n',
+          message: 'please enter a author:',
         }
       ]).then((answers) => {
         console.log(answers)
         // start to download
         const spinner = ora('downloading template...')
         spinner.start()
-        download('direct:https://github.com/LuckyWinty/create-project-template.git#master',
+        const downloadPath = `direct:https://github.com/LuckyWinty/${answers.templateType}-project-template.git#master`
+        download(downloadPath,
           name, { clone: true }, (err) => {
             if (err) {
               spinner.fail()
