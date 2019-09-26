@@ -3,7 +3,7 @@ A cli to create project quickly...
 
 ## install global
 
-`npm install create-repo -g`
+`npm install create-repo-cli -g`
 
 ## create webpack project
 
